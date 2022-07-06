@@ -54,7 +54,7 @@ async function main() {
       console.log('Opción 7');    
     }
     else if(opcion === '8') {
-      console.log('Opción 8');    
+      console.log('Adios');    
     }
     // el bloque de código de else solamente se ejecuta cuando todos los anteriores else if no se cumple, ni tampoco el primer if
     else { 
