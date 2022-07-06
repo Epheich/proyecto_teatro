@@ -32,10 +32,12 @@ export async function gestionarOpcion(
     else if(opcion === '3') {
         console.clear();
         teatro.mostrarLocalidadesOcupadas();
-        await rlp.questionAsync('Pulse Enter para volver al Menú');;    
+        await rlp.questionAsync('Pulse Enter para volver al Menú');   
     }
     else if(opcion === '4') {
-        console.log('Opción 4');    
+        console.clear();
+        await teatro.venderLocalidad(rlp);
+        await rlp.questionAsync('Pulse Enter para volver al Menú');    
     }
     else if(opcion === '5') {
         console.log('Opción 5');    
